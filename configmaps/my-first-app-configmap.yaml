@@ -1,7 +1,7 @@
 ---
 kind: ConfigMap
 metadata:
-  name: ah-ah-ah-configmap
+  name: my-first-app-configmap
 apiVersion: v1
 data:
   index.html: |+
