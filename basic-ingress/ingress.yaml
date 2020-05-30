@@ -1,0 +1,15 @@
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: my-first-ingress
+spec:
+  rules:
+  - host: k3s.example.com
+    http:
+      paths:
+      - path: /my-first-app
+        backend:
+          serviceName: my-first-app
+          servicePort: 80
+
